@@ -11,7 +11,8 @@ describe('Automating bebo site',()=>{
        //assertion to check the url
        cy.url().should('include','/careers');
 
-
+//hi 
+//manreet
     //Using attributes
        //Verifying learning and development tab to be highlighted
        cy.get('[data-toggle=".learning-and-developmentIndia_Careers"]').should('have.class', 'active');

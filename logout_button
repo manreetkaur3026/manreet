@@ -1,0 +1,17 @@
+/// <reference types= "Cypress" />
+
+describe('Google Search', () => {
+    beforeEach(() => {
+        cy.visit('https://www.google.com/');
+    })
+    it.only('To find travel location', () => {
+         
+        cy.findByRole('combobox',{name:'Search'}).type('Travel locations');
+        cy.get('[value="Google Search"]').eq(0).click();
+        cy.findByRole('heading',{name:'Cypress Tutorial'}).click();
+        cy.findByRole('link',{name:'Cypress - Frames'}).click();
+    
+         
+        })
+      
+        })
